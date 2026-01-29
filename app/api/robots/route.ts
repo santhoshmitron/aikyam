@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 export async function GET() {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_DOMAIN || 'https://aikyam.in';
+  const baseUrl = 'https://aikyam.in';
 
   const robots = `User-agent: *
 Allow: /

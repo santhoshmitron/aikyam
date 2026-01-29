@@ -9,7 +9,6 @@ const nextConfig = {
   },
   compress: true,
   productionBrowserSourceMaps: false,
-  swcMinify: true,
   headers: async () => {
     return [
       {

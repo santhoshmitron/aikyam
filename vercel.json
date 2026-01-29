@@ -4,10 +4,6 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
-  "env": {
-    "NEXT_PUBLIC_APP_NAME": "@Aikyam",
-    "NEXT_PUBLIC_APP_DOMAIN": "@https://aikyam.in"
-  },
   "headers": [
     {
       "source": "/(.*)",
