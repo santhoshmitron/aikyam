@@ -1,27 +1,11 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { Code, Palette, Megaphone, Users, Briefcase } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Briefcase, ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-
-const roles = [
-  {
-    icon: Code,
-    title: "Engineering",
-    description:
-      "Build scalable, beautiful tech that serves millions of devotees",
-    openings: "5 positions",
-  },
-  {
-    icon: Palette,
-    title: "Design",
-    description:
-      "Craft interfaces that honor tradition while embracing modernity",
-    openings: "2 positions",
-  },
-];
+import { jobCategories } from "@/lib/jobs";
 
 export default function Careers() {
   return (
@@ -50,36 +34,46 @@ export default function Careers() {
 
         {/* Open roles */}
         <div className="grid md:grid-cols-2 gap-6 mb-16">
-          {roles.map((role, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: index * 0.1 }}
-            >
-              <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 bg-white group">
-                <CardContent className="p-8">
-                  <div className="flex items-start justify-between mb-6">
-                    <div className="p-4 bg-gradient-to-br from-purple-600 to-purple-500 rounded-2xl group-hover:scale-110 transition-transform duration-300">
-                      <role.icon className="w-8 h-8 text-white" />
-                    </div>
-                    <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">
-                      {role.openings}
-                    </span>
-                  </div>
+          {jobCategories.map((category, index) => {
+            const IconComponent = category.icon;
+            return (
+              <motion.div
+                key={category.slug}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.8, delay: index * 0.1 }}
+              >
+                <Link href={`/careers/${category.slug}`}>
+                  <Card className="h-full border-none shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 bg-white group cursor-pointer">
+                    <CardContent className="p-8">
+                      <div className="flex items-start justify-between mb-6">
+                        <div className="p-4 bg-gradient-to-br from-purple-600 to-purple-500 rounded-2xl group-hover:scale-110 transition-transform duration-300">
+                          <IconComponent className="w-8 h-8 text-white" />
+                        </div>
+                        <span className="px-3 py-1 bg-purple-100 text-purple-700 text-sm font-medium rounded-full">
+                          {category.totalOpenings}
+                        </span>
+                      </div>
 
-                  <h3 className="text-2xl md:text-3xl font-light text-gray-800 mb-3">
-                    {role.title}
-                  </h3>
+                      <h3 className="text-2xl md:text-3xl font-light text-gray-800 mb-3">
+                        {category.title}
+                      </h3>
 
-                  <p className="text-lg text-gray-600 leading-relaxed">
-                    {role.description}
-                  </p>
-                </CardContent>
-              </Card>
-            </motion.div>
-          ))}
+                      <p className="text-lg text-gray-600 leading-relaxed mb-4">
+                        {category.shortDescription}
+                      </p>
+
+                      <div className="flex items-center text-purple-600 font-medium group-hover:text-purple-700 transition-colors">
+                        <span>Learn more</span>
+                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
