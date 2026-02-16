@@ -10,27 +10,29 @@ const roles = [
   {
     icon: Code,
     title: "Engineering",
-    description: "Build scalable, beautiful tech that serves millions of devotees",
-    openings: "5 positions"
+    description:
+      "Build scalable, beautiful tech that serves millions of devotees",
+    openings: "5 positions",
   },
   {
     icon: Palette,
     title: "Design",
-    description: "Craft interfaces that honor tradition while embracing modernity",
-    openings: "2 positions"
+    description:
+      "Craft interfaces that honor tradition while embracing modernity",
+    openings: "2 positions",
   },
-  {
-    icon: Megaphone,
-    title: "Marketing",
-    description: "Tell the story of digital devotion to the world",
-    openings: "3 positions"
-  },
-  {
-    icon: Users,
-    title: "Community",
-    description: "Connect temples, priests, and devotees with care and authenticity",
-    openings: "4 positions"
-  }
+  // {
+  //   icon: Megaphone,
+  //   title: "Marketing",
+  //   description: "Tell the story of digital devotion to the world",
+  //   openings: "3 positions"
+  // },
+  // {
+  //   icon: Users,
+  //   title: "Community",
+  //   description: "Connect temples, priests, and devotees with care and authenticity",
+  //   openings: "4 positions"
+  // }
 ];
 
 export default function Careers() {
@@ -51,19 +53,20 @@ export default function Careers() {
               Join Our Mission
             </p>
           </div>
-          
+
           <h2 className="text-5xl md:text-6xl font-light text-gray-800 mb-6">
             Come Build the Digital Mandir of Bharat
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-8" />
-          
+
           <p className="text-2xl md:text-3xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed mb-6">
             This is not just a job. It's a calling.
           </p>
-          
+
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join a team of builders, dreamers, and believers working to preserve India's spiritual heritage 
-            through technology. If you're passionate about culture, faith, and impact — you belong here.
+            Join a team of builders, dreamers, and believers working to preserve
+            India's spiritual heritage through technology. If you're passionate
+            about culture, faith, and impact — you belong here.
           </p>
         </motion.div>
 
@@ -87,11 +90,11 @@ export default function Careers() {
                       {role.openings}
                     </span>
                   </div>
-                  
+
                   <h3 className="text-2xl md:text-3xl font-light text-gray-800 mb-3">
                     {role.title}
                   </h3>
-                  
+
                   <p className="text-lg text-gray-600 leading-relaxed">
                     {role.description}
                   </p>
@@ -102,7 +105,7 @@ export default function Careers() {
         </div>
 
         {/* Values */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -112,40 +115,49 @@ export default function Careers() {
           <h3 className="text-3xl md:text-4xl font-light mb-8 text-center">
             What We Offer
           </h3>
-          
+
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="text-5xl mb-4">💡</div>
               <h4 className="text-xl font-light mb-2">Purpose-Driven Work</h4>
-              <p className="text-purple-200">Build something that matters to millions</p>
+              <p className="text-purple-200">
+                Build something that matters to millions
+              </p>
             </div>
-            
+
             <div className="text-center">
               <div className="text-5xl mb-4">🚀</div>
               <h4 className="text-xl font-light mb-2">Fast Growth</h4>
-              <p className="text-purple-200">Learn from the best, scale with impact</p>
+              <p className="text-purple-200">
+                Learn from the best, scale with impact
+              </p>
             </div>
-            
+
             <div className="text-center">
               <div className="text-5xl mb-4">🎯</div>
               <h4 className="text-xl font-light mb-2">Cultural Pride</h4>
-              <p className="text-purple-200">Help revive and preserve our heritage</p>
+              <p className="text-purple-200">
+                Help revive and preserve our heritage
+              </p>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* CTA */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, delay: 0.5 }}
           className="text-center"
         >
-          <Button size="lg" className="bg-purple-600 hover:bg-purple-700 text-white px-12 py-8 text-xl rounded-full shadow-2xl hover:shadow-purple-200 transition-all duration-300">
+          <Button
+            size="lg"
+            className="bg-purple-600 hover:bg-purple-700 text-white px-12 py-8 text-xl rounded-full shadow-2xl hover:shadow-purple-200 transition-all duration-300"
+          >
             View Open Positions
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );

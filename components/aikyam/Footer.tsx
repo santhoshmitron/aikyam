@@ -164,7 +164,7 @@ export default function Footer() {
           transition={{ duration: 1, delay: 0.8 }}
           className="flex flex-col md:flex-row justify-between items-center gap-4 text-purple-300 text-sm"
         >
-          <p>© 2024 Aikyam. All rights reserved.</p>
+          <p>© 2026 Aikyam. All rights reserved.</p>
           <div className="flex gap-6">
             <a href="/privacy" className="hover:text-white transition-colors">
               Privacy Policy

@@ -4,11 +4,11 @@ import HeroSection from "@/components/aikyam/HeroSection";
 // import CoreBelief from '@/components/aikyam/CoreBelief';
 // import Features from '@/components/aikyam/Features';
 // import PriestLed from '@/components/aikyam/PriestLed';
-import AikyamAI from "@/components/aikyam/AikyamAI";
-import DevoteeJourney from "@/components/aikyam/DevoteeJourney";
+// import AikyamAI from "@/components/aikyam/AikyamAI";
+// import DevoteeJourney from "@/components/aikyam/DevoteeJourney";
 import TemplesAndPriests from "@/components/aikyam/TemplesAndPriests";
 import Careers from "@/components/aikyam/Careers";
-import ClosingInvocation from "@/components/aikyam/ClosingInvocation";
+// import ClosingInvocation from "@/components/aikyam/ClosingInvocation";
 import Footer from "@/components/aikyam/Footer";
 
 export const metadata = {
@@ -48,13 +48,13 @@ export default function Home() {
           <PriestLed />
         </section> */}
 
-        <section id="ai" className="scroll-mt-20">
+        {/* <section id="ai" className="scroll-mt-20">
           <AikyamAI />
-        </section>
+        </section> */}
 
-        <section id="journey" className="scroll-mt-20">
+        {/* <section id="journey" className="scroll-mt-20">
           <DevoteeJourney />
-        </section>
+        </section> */}
 
         <section id="temples" className="scroll-mt-20">
           <TemplesAndPriests />
@@ -64,9 +64,9 @@ export default function Home() {
           <Careers />
         </section>
 
-        <section id="closing" className="scroll-mt-20">
+        {/* <section id="closing" className="scroll-mt-20">
           <ClosingInvocation />
-        </section>
+        </section> */}
       </main>
 
       <Footer />

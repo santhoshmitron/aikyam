@@ -108,7 +108,7 @@ export default function HeroSection() {
         </motion.div>
 
         {/* CTA Buttons */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.9 }}
@@ -133,7 +133,7 @@ export default function HeroSection() {
             <span className="hidden sm:inline">Experience Aikyam (iOS)</span>
             <span className="sm:hidden">iOS App</span>
           </Button>
-        </motion.div>
+        </motion.div> */}
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
