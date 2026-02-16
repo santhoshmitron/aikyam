@@ -2,7 +2,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Instagram, Twitter, Linkedin } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Instagram,
+  Twitter,
+  Linkedin,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,9 +24,9 @@ export default function Footer() {
               style={{
                 width: `${(i + 1) * 8}%`,
                 height: `${(i + 1) * 8}%`,
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
+                top: "50%",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
               }}
             />
           ))}
@@ -40,29 +47,40 @@ export default function Footer() {
               <div className="text-5xl">ॐ</div>
               <div>
                 <h3 className="text-3xl font-light">Aikyam</h3>
-                <p className="text-purple-300 text-sm">Sacred Digital Harmony</p>
+                <p className="text-purple-300 text-sm">
+                  Sacred Digital Harmony
+                </p>
               </div>
             </div>
             <p className="text-purple-200 leading-relaxed mb-6">
-              Uniting temples, priests, and devotees in one divine rhythm. 
+              Uniting temples, priests, and devotees in one divine rhythm.
               Bringing authentic Hindu spirituality to the digital age.
             </p>
             {/* Social links */}
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+              >
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+              >
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors">
+              <a
+                href="#"
+                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
+              >
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
           </motion.div>
 
           {/* Quick links */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -77,7 +95,7 @@ export default function Footer() {
               <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
               <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
             </ul>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact */}
           <motion.div
@@ -91,11 +109,11 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-white">hello@aikyam.in</p>
+                  <p className="text-white">info@shriaikyam.com</p>
                   <p className="text-sm">General inquiries</p>
                 </div>
               </li>
-              <li className="flex items-start gap-3">
+              {/* <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-white">priests@aikyam.in</p>
@@ -108,12 +126,12 @@ export default function Footer() {
                   <p className="text-white">+91 98765 43210</p>
                   <p className="text-sm">Support hotline</p>
                 </div>
-              </li>
+              </li> */}
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-white">Bengaluru, Karnataka</p>
-                  <p className="text-sm">Bharat</p>
+                  {/* <p className="text-sm">Bharat</p> */}
                 </div>
               </li>
             </ul>
@@ -148,9 +166,15 @@ export default function Footer() {
         >
           <p>© 2024 Aikyam. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="/contact" className="hover:text-white transition-colors">Contact Us</a>
+            <a href="/privacy" className="hover:text-white transition-colors">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="hover:text-white transition-colors">
+              Terms of Service
+            </a>
+            <a href="/contact" className="hover:text-white transition-colors">
+              Contact Us
+            </a>
           </div>
         </motion.div>
 
@@ -163,7 +187,9 @@ export default function Footer() {
           className="text-center mt-12"
         >
           <p className="text-purple-300 text-lg">🙏</p>
-          <p className="text-purple-400 text-sm mt-2">Made with devotion in Bharat</p>
+          <p className="text-purple-400 text-sm mt-2">
+            Made with devotion in Bharat
+          </p>
         </motion.div>
       </div>
     </footer>

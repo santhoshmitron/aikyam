@@ -25,10 +25,10 @@ export default function HeroSection() {
         transition={{
           duration: 3,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: "easeInOut",
         }}
       />
-      
+
       <motion.div
         className="absolute bottom-10 left-10 w-40 h-40 bg-gradient-radial from-amber-400 to-transparent rounded-full opacity-20"
         animate={{
@@ -39,7 +39,7 @@ export default function HeroSection() {
           duration: 4,
           repeat: Infinity,
           ease: "easeInOut",
-          delay: 1
+          delay: 1,
         }}
       />
 
@@ -84,10 +84,26 @@ export default function HeroSection() {
           className="max-w-4xl mx-auto mb-12"
         >
           <p className="text-xl md:text-2xl text-purple-200 leading-relaxed font-light">
-            Where temples, priests, and devotees unite in one divine rhythm.
+            Aikyam is a stealth mode startup operating in India’s Faith-Tech
+            sector. We see immense opportunity and rapid evolution in this
+            emerging space.
           </p>
+
           <p className="text-lg md:text-xl text-purple-300 mt-4 leading-relaxed">
-            Live darshans, personalized poojas, and temple sanctums — guided by verified priests, only on Android & iOS.
+            Anticipating complex technological challenges, we are building
+            cutting-edge AI solutions for language processing, image
+            recognition, intelligent search, personalized recommendations, and
+            more.
+          </p>
+
+          <p className="text-lg md:text-xl text-purple-300 mt-4 leading-relaxed">
+            Our team is developing scalable backend systems and reliable mobile
+            applications to power the next generation of spiritual technology.
+          </p>
+
+          <p className="text-lg md:text-xl text-purple-300 mt-4 leading-relaxed">
+            If you're excited to be part of this mission, we’d love to connect —
+            we’re hiring!
           </p>
         </motion.div>
 
@@ -98,16 +114,18 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 0.9 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8 w-full px-4 sm:px-0"
         >
-          <Button 
+          <Button
             size="lg"
             className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-purple-900 font-semibold px-6 sm:px-8 py-3 sm:py-6 text-sm sm:text-lg rounded-full shadow-2xl hover:shadow-yellow-300 transition-all duration-300 transform hover:scale-105"
           >
             <Smartphone className="mr-2 w-4 sm:w-5 h-4 sm:h-5" />
-            <span className="hidden sm:inline">Experience Aikyam (Android)</span>
+            <span className="hidden sm:inline">
+              Experience Aikyam (Android)
+            </span>
             <span className="sm:hidden">Android App</span>
           </Button>
-          
-          <Button 
+
+          <Button
             size="lg"
             className="w-full sm:w-auto bg-gradient-to-r from-yellow-500 to-amber-500 hover:from-yellow-600 hover:to-amber-600 text-purple-900 font-semibold px-6 sm:px-8 py-3 sm:py-6 text-sm sm:text-lg rounded-full shadow-2xl hover:shadow-yellow-300 transition-all duration-300 transform hover:scale-105"
           >
@@ -123,7 +141,7 @@ export default function HeroSection() {
           transition={{ duration: 1, delay: 1.1 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full px-4 sm:px-0"
         >
-          <Button 
+          {/* <Button 
             size="lg"
             variant="outline"
             className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-400 hover:bg-purple-800 px-6 sm:px-8 py-3 sm:py-6 text-sm sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 bg-transparent"
@@ -131,9 +149,9 @@ export default function HeroSection() {
             <Users className="mr-2 w-4 sm:w-5 h-4 sm:h-5" />
             <span className="hidden sm:inline">Join as a Priest</span>
             <span className="sm:hidden">Join Priest</span>
-          </Button>
-          
-          <Button 
+          </Button> */}
+
+          <Button
             size="lg"
             variant="outline"
             className="w-full sm:w-auto border-2 border-yellow-400 text-yellow-400 hover:bg-purple-800 px-6 sm:px-8 py-3 sm:py-6 text-sm sm:text-lg rounded-full transition-all duration-300 transform hover:scale-105 bg-transparent"
@@ -154,12 +172,12 @@ export default function HeroSection() {
           transition={{
             duration: 6,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: "easeInOut",
           }}
         >
           🪷
         </motion.div>
-        
+
         <motion.div
           className="absolute top-1/4 right-1/4 text-5xl opacity-20"
           animate={{
@@ -170,7 +188,7 @@ export default function HeroSection() {
             duration: 7,
             repeat: Infinity,
             ease: "easeInOut",
-            delay: 1
+            delay: 1,
           }}
         >
           🪷

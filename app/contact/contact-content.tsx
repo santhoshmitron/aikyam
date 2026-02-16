@@ -1,22 +1,26 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Header from '@/components/aikyam/Header';
-import Footer from '@/components/aikyam/Footer';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
-import { motion } from 'framer-motion';
+import React, { useState } from "react";
+import Header from "@/components/aikyam/Header";
+import Footer from "@/components/aikyam/Footer";
+import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function ContactContent() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -27,10 +31,10 @@ export default function ContactContent() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Simulate form submission
-    console.log('[v0] Form submitted:', formData);
+    console.log("[v0] Form submitted:", formData);
     setSubmitted(true);
     setTimeout(() => {
-      setFormData({ name: '', email: '', subject: '', message: '' });
+      setFormData({ name: "", email: "", subject: "", message: "" });
       setSubmitted(false);
     }, 3000);
   };
@@ -38,21 +42,9 @@ export default function ContactContent() {
   const contactInfo = [
     {
       icon: Mail,
-      title: 'Email',
-      details: 'hello@aikyam.in',
-      subtext: 'General inquiries',
-    },
-    {
-      icon: Phone,
-      title: 'Phone',
-      details: '+91 98765 43210',
-      subtext: 'Support hotline (9 AM - 6 PM IST)',
-    },
-    {
-      icon: MapPin,
-      title: 'Address',
-      details: 'Bengaluru, Karnataka',
-      subtext: 'Bharat',
+      title: "Email",
+      details: "info@aikyam.com",
+      subtext: "General inquiries",
     },
   ];
 
@@ -69,7 +61,8 @@ export default function ContactContent() {
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-8" />
             <p className="text-2xl text-gray-600 font-light leading-relaxed">
-              Have a question? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Have a question? We'd love to hear from you. Send us a message and
+              we'll respond as soon as possible.
             </p>
           </div>
         </section>
@@ -98,9 +91,7 @@ export default function ContactContent() {
                       <p className="text-lg font-medium text-purple-700 mb-1">
                         {info.details}
                       </p>
-                      <p className="text-sm text-gray-600">
-                        {info.subtext}
-                      </p>
+                      <p className="text-sm text-gray-600">{info.subtext}</p>
                     </div>
                   </div>
                 </motion.div>
@@ -191,7 +182,7 @@ export default function ContactContent() {
                     className="w-full px-6 py-4 rounded-lg bg-gradient-to-r from-purple-600 to-purple-700 text-white font-medium hover:shadow-lg transition-all duration-300 flex items-center justify-center gap-2 disabled:opacity-50"
                   >
                     <Send className="w-5 h-5" />
-                    {submitted ? 'Message Sent!' : 'Send Message'}
+                    {submitted ? "Message Sent!" : "Send Message"}
                   </motion.button>
 
                   {submitted && (
@@ -222,20 +213,20 @@ export default function ContactContent() {
             <div className="space-y-6">
               {[
                 {
-                  q: 'How do I download the Aikyam app?',
+                  q: "How do I download the Aikyam app?",
                   a: 'You can download Aikyam from the Google Play Store or Apple App Store. Search for "Aikyam" and download the official app.',
                 },
                 {
-                  q: 'Is Aikyam available outside India?',
-                  a: 'Currently, Aikyam is available on Android and iOS with support for users worldwide who wish to connect with Indian temples and priests.',
+                  q: "Is Aikyam available outside India?",
+                  a: "Currently, Aikyam is available on Android and iOS with support for users worldwide who wish to connect with Indian temples and priests.",
                 },
                 {
-                  q: 'How can I become a priest on Aikyam?',
+                  q: "How can I become a priest on Aikyam?",
                   a: 'Visit the "Join as a Priest" section on our website or contact priests@aikyam.in for detailed information about our priest onboarding process.',
                 },
                 {
-                  q: 'What payment methods do you accept?',
-                  a: 'We accept all major payment methods including credit/debit cards, digital wallets, and bank transfers.',
+                  q: "What payment methods do you accept?",
+                  a: "We accept all major payment methods including credit/debit cards, digital wallets, and bank transfers.",
                 },
               ].map((faq, index) => (
                 <motion.div
