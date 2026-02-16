@@ -36,67 +36,6 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
         {/* Top section */}
         <div className="grid md:grid-cols-3 gap-12 mb-16">
-          {/* Brand */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1 }}
-          >
-            <div className="flex items-center gap-3 mb-6">
-              <div className="text-5xl">ॐ</div>
-              <div>
-                <h3 className="text-3xl font-light">Aikyam</h3>
-                <p className="text-purple-300 text-sm">
-                  Sacred Digital Harmony
-                </p>
-              </div>
-            </div>
-            <p className="text-purple-200 leading-relaxed mb-6">
-              Uniting temples, priests, and devotees in one divine rhythm.
-              Bringing authentic Hindu spirituality to the digital age.
-            </p>
-            {/* Social links */}
-            <div className="flex gap-4">
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
-              >
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a
-                href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded-full flex items-center justify-center transition-colors"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-            </div>
-          </motion.div>
-
-          {/* Quick links */}
-          {/* <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 1, delay: 0.2 }}
-          >
-            <h4 className="text-xl font-light mb-6">Explore</h4>
-            <ul className="space-y-3 text-purple-200">
-              <li><a href="/live-darshan" className="hover:text-white transition-colors">Live Darshan</a></li>
-              <li><a href="/daily-blessings" className="hover:text-white transition-colors">Daily Blessings</a></li>
-              <li><a href="/temples" className="hover:text-white transition-colors">Temples</a></li>
-              <li><a href="/priests" className="hover:text-white transition-colors">Priests</a></li>
-              <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
-              <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
-            </ul>
-          </motion.div> */}
-
           {/* Contact */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -113,25 +52,11 @@ export default function Footer() {
                   <p className="text-sm">General inquiries</p>
                 </div>
               </li>
-              {/* <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-white">priests@aikyam.in</p>
-                  <p className="text-sm">For priests & temples</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Phone className="w-5 h-5 mt-1 flex-shrink-0" />
-                <div>
-                  <p className="text-white">+91 98765 43210</p>
-                  <p className="text-sm">Support hotline</p>
-                </div>
-              </li> */}
+
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-white">Bengaluru, Karnataka</p>
-                  {/* <p className="text-sm">Bharat</p> */}
                 </div>
               </li>
             </ul>

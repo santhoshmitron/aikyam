@@ -21,23 +21,11 @@ const roles = [
       "Craft interfaces that honor tradition while embracing modernity",
     openings: "2 positions",
   },
-  // {
-  //   icon: Megaphone,
-  //   title: "Marketing",
-  //   description: "Tell the story of digital devotion to the world",
-  //   openings: "3 positions"
-  // },
-  // {
-  //   icon: Users,
-  //   title: "Community",
-  //   description: "Connect temples, priests, and devotees with care and authenticity",
-  //   openings: "4 positions"
-  // }
 ];
 
 export default function Careers() {
   return (
-    <section className="relative py-32 px-6 bg-gradient-to-br from-white via-purple-50 to-purple-100">
+    <section className="relative pt-8 sm:pt-12 md:pt-16 pb-16 sm:pb-24 px-6 bg-gradient-to-br from-white via-purple-50 to-purple-100">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <motion.div
@@ -45,29 +33,19 @@ export default function Careers() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="text-center mb-20"
+          className="text-center mb-8 sm:mb-12 md:mb-16"
         >
-          <div className="inline-block mb-4 px-6 py-2 bg-gradient-to-r from-purple-100 to-purple-200 rounded-full">
-            <p className="text-sm font-medium text-purple-700 tracking-wide uppercase flex items-center gap-2">
-              <Briefcase className="w-4 h-4" />
+          <div className="inline-block mb-3 sm:mb-4 px-4 sm:px-6 py-1.5 sm:py-2 bg-gradient-to-r from-purple-100 to-purple-200 rounded-full">
+            <p className="text-xs sm:text-sm font-medium text-purple-700 tracking-wide uppercase flex items-center gap-2 justify-center">
+              <Briefcase className="w-3 h-3 sm:w-4 sm:h-4" />
               Join Our Mission
             </p>
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-light text-gray-800 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-gray-800 mb-4 sm:mb-6">
             Come Build the Digital Mandir of Bharat
           </h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-8" />
-
-          <p className="text-2xl md:text-3xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed mb-6">
-            This is not just a job. It's a calling.
-          </p>
-
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Join a team of builders, dreamers, and believers working to preserve
-            India's spiritual heritage through technology. If you're passionate
-            about culture, faith, and impact — you belong here.
-          </p>
+          <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-transparent via-purple-400 to-transparent mx-auto mb-6 sm:mb-8" />
         </motion.div>
 
         {/* Open roles */}
@@ -103,61 +81,6 @@ export default function Careers() {
             </motion.div>
           ))}
         </div>
-
-        {/* Values */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          className="p-12 bg-gradient-to-br from-purple-900 to-purple-800 rounded-3xl text-white mb-16"
-        >
-          <h3 className="text-3xl md:text-4xl font-light mb-8 text-center">
-            What We Offer
-          </h3>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-5xl mb-4">💡</div>
-              <h4 className="text-xl font-light mb-2">Purpose-Driven Work</h4>
-              <p className="text-purple-200">
-                Build something that matters to millions
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="text-5xl mb-4">🚀</div>
-              <h4 className="text-xl font-light mb-2">Fast Growth</h4>
-              <p className="text-purple-200">
-                Learn from the best, scale with impact
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="text-5xl mb-4">🎯</div>
-              <h4 className="text-xl font-light mb-2">Cultural Pride</h4>
-              <p className="text-purple-200">
-                Help revive and preserve our heritage
-              </p>
-            </div>
-          </div>
-        </motion.div> */}
-
-        {/* CTA */}
-        {/* <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1, delay: 0.5 }}
-          className="text-center"
-        >
-          <Button
-            size="lg"
-            className="bg-purple-600 hover:bg-purple-700 text-white px-12 py-8 text-xl rounded-full shadow-2xl hover:shadow-purple-200 transition-all duration-300"
-          >
-            View Open Positions
-          </Button>
-        </motion.div> */}
       </div>
     </section>
   );

@@ -1,14 +1,8 @@
 import React from "react";
-// import Header from '@/components/aikyam/Header';
 import HeroSection from "@/components/aikyam/HeroSection";
-// import CoreBelief from '@/components/aikyam/CoreBelief';
-// import Features from '@/components/aikyam/Features';
-// import PriestLed from '@/components/aikyam/PriestLed';
-// import AikyamAI from "@/components/aikyam/AikyamAI";
-// import DevoteeJourney from "@/components/aikyam/DevoteeJourney";
+
 import TemplesAndPriests from "@/components/aikyam/TemplesAndPriests";
 import Careers from "@/components/aikyam/Careers";
-// import ClosingInvocation from "@/components/aikyam/ClosingInvocation";
 import Footer from "@/components/aikyam/Footer";
 
 export const metadata = {
@@ -27,46 +21,20 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="relative bg-gradient-to-b from-purple-900 via-purple-50 to-white overflow-hidden">
-      {/* <Header /> */}
-
+    <div className="relative bg-gradient-to-b from-purple-900 via-purple-50 to-white overflow-x-hidden scroll-smooth">
       {/* Main Content */}
       <main className="w-full">
-        <section id="hero" className="scroll-mt-20">
+        <section id="hero" className="scroll-mt-0">
           <HeroSection />
         </section>
 
-        {/* <section id="beliefs" className="scroll-mt-20">
-          <CoreBelief />
-        </section> */}
-
-        {/* <section id="features" className="scroll-mt-20">
-          <Features />
-        </section> */}
-
-        {/* <section id="priests" className="scroll-mt-20">
-          <PriestLed />
-        </section> */}
-
-        {/* <section id="ai" className="scroll-mt-20">
-          <AikyamAI />
-        </section> */}
-
-        {/* <section id="journey" className="scroll-mt-20">
-          <DevoteeJourney />
-        </section> */}
-
-        <section id="temples" className="scroll-mt-20">
+        <section id="temples" className="scroll-mt-24">
           <TemplesAndPriests />
         </section>
 
-        <section id="careers" className="scroll-mt-20">
+        <section id="careers" className="scroll-mt-0">
           <Careers />
         </section>
-
-        {/* <section id="closing" className="scroll-mt-20">
-          <ClosingInvocation />
-        </section> */}
       </main>
 
       <Footer />
